@@ -13,6 +13,9 @@ from ultralytics import YOLO
 
 
 DB_PATH = "missing_pet.db"
+print("Database location:", os.path.abspath(DB_PATH))
+print("Database exists:", os.path.exists(DB_PATH))
+
 UPLOAD_DIR = "uploaded_pet_images"
 MODEL_PATH = "efficientnetb0_pet_identity_model.keras"
 
